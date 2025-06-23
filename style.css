@@ -5,58 +5,146 @@
 }
 
 body {
-    font-family: "Roboto", ;
+    font-family: "Roboto";
+    border: 5px solid red;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
+    border: 5px solid  yellow;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #1F2937;
+}
+
+.h-title {
     font-size: 24px;
-    font-weight: 700;
+    color: #F9FAF8;
+}
+
+.h-links {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 ul {
     display: flex;
+    gap: 20px;
     list-style-type: none;
-    gap: 40px;
 }
 
+
+/* Header CSS */
+
 .section-1 {
-    background-color: #1F2937;
+    border: 5px solid blue;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #1F2937;
+}
+
+.sec1-col1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-self: center;
 }
 
 .hero {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
-    max-width: 300px;
-
 }
 
-.hero1 {
+.hero-text {
     font-size: 18px;
-    max-width: 400px;
     color: #E5E7EB;
 }
 
-.h-links {
-    color: #E5E7EB;
-    font-size: 18px;
+.sec1-col2 img {
+    width: 500px;
+    height: 300px;
 }
 
-.h-title {
+
+/* section-1 */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid green;
+    gap: 30px;
+}
+
+.sec2-row1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.sec2-row2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card img {
+    width: 400px;
+    height: 400px;
+}
+
+/* Section-2 */
+
+.section-3 {
+    display: flex;
+    border: 5px solid orange;
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.thor {
+    text-align: end;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/* Section-3 */
+
+.section-4 {
+    border: 5px solid green;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3882F6;
+}
+
+.action {
     color: #F9FAF8;
+    font-weight: 900;
 }
 
-.s1-image img {
-    width: 300px;
-    height: 180px;
+.signup {
+    color: #E5E7EB;
 }
 
-.s2-images img {
-    width: 200px;
-    height: 200px;
+.sec4-col2 {
+    align-self: center;
+}
+
+/* section-4 */
+
+.footer {
+    border: 5px solid blue;
+    color: #E5E7EB;
+    text-align: center;
+    background-color: #1F2937;
+    margin-top: auto;
 }
