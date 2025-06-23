@@ -1,20 +1,23 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #1F2937;
-    gap: 35em;
+    gap: 28em;
 }
 
 .h-title {
@@ -38,24 +41,27 @@ ul {
 /* Header CSS */
 
 .section-1 {
+    padding: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
     background-color: #1F2937;
-    gap: 4em;
+    /* gap: 4em;
     padding-top: 6em;
-    padding-bottom: 6em;
+    padding-bottom: 6em; */
 }
 
 .sec1-col1 {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-self: center;
+    align-self: center; */
 
 }
 
 .hero {
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 36px;
+    font-weight: 600;
     color: #F9FAF8;
     max-width: 400px;
 }
@@ -100,15 +106,43 @@ ul {
 .sec2-row2 {
     display: flex;
     justify-content: center;
-    gap: 8em;
+    gap: 16px;
     padding-bottom: 90px;
 }
+
+@media screen and (max-width: 900px) {
+    .sec2-row2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sec1-col2 img {
+        width: 500px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sec1-col2 img {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .sec1-col2 img {
+        width: 300px;
+        height: 250px;
+    }
+}
+
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px;
+    /* width: 100px; */
     text-align: center;
 }
 
@@ -125,12 +159,16 @@ ul {
 
 .section-3 {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding-top: 5em;
+    padding: 80px;
+
+    /* padding-top: 5em;
     padding-bottom: 5em;
     padding-left: 50em;
-    padding-right: 50em;
+    padding-right: 50em; */
 }
 
 .quote {
@@ -138,13 +176,16 @@ ul {
     font-style: italic;
     font-size: 36px;
     font-weight: 100;
-    width: 23em;
+    width: 50%;
+    /* width: 23em; */
 }
 
 .thor {
     text-align: end;
     font-weight: 600;
     font-size: 23px;
+
+    text-align: end;
 }
 
 /* Section-3 */
@@ -163,7 +204,7 @@ ul {
     align-items: center;
     background-color: #3882F6;
     padding: 50px 150px;
-    gap: 10em;
+    gap: 8em;
 }
 
 .action {
