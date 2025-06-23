@@ -5,23 +5,22 @@
 }
 
 body {
-    font-family: "Roboto";
-    border: 5px solid red;
-    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    border: 5px solid  yellow;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1F2937;
+    gap: 35em;
 }
 
 .h-title {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
 }
 
 .h-links {
@@ -39,33 +38,46 @@ ul {
 /* Header CSS */
 
 .section-1 {
-    border: 5px solid blue;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #1F2937;
+    gap: 4em;
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
 .sec1-col1 {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     align-self: center;
+
 }
 
 .hero {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+    max-width: 400px;
 }
 
 .hero-text {
     font-size: 18px;
     color: #E5E7EB;
+    max-width: 450px;
 }
 
 .sec1-col2 img {
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 250px;
+}
+
+.sec1-col1 button {
+    background-color: #3882F6;
+    width: 8em;
+    padding: 5px 8px;
+    color: #E5E7EB;
+    font-weight: 900;
+    font-size: 15px;
 }
 
 
@@ -74,8 +86,6 @@ ul {
 .section-2 {
     display: flex;
     flex-direction: column;
-    border: 5px solid green;
-    gap: 30px;
 }
 
 .sec2-row1 {
@@ -83,68 +93,110 @@ ul {
     color: #1F2937;
     font-weight: 900;
     text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .sec2-row2 {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 8em;
+    padding-bottom: 90px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+}
+
+.card-text {
+    width: 150px;
 }
 
 .card img {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
 }
 
 /* Section-2 */
 
 .section-3 {
     display: flex;
-    border: 5px solid orange;
     flex-direction: column;
     background-color: #E5E7EB;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 50em;
+    padding-right: 50em;
 }
 
 .quote {
+    color: grey;
     font-style: italic;
     font-size: 36px;
     font-weight: 100;
+    width: 23em;
 }
 
 .thor {
     text-align: end;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 600;
+    font-size: 23px;
 }
 
 /* Section-3 */
 
-.section-4 {
-    border: 5px solid green;
+.section4-head {
     display: flex;
-    justify-content: space-around;
+    background-color: #F9FAF8;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #3882F6;
+    padding: 50px 150px;
+    gap: 10em;
 }
 
 .action {
     color: #F9FAF8;
     font-weight: 900;
+    font-size: 24px;
 }
 
 .signup {
     color: #E5E7EB;
+    font-size: 20px;
 }
 
 .sec4-col2 {
     align-self: center;
 }
 
+.sec4-col2 button {
+    border: 1px solid white;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-size: 20px;
+    padding: 10px 40px;
+}
+
 /* section-4 */
 
 .footer {
-    border: 5px solid blue;
+    display: flex;
     color: #E5E7EB;
     text-align: center;
     background-color: #1F2937;
-    margin-top: auto;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
 }
